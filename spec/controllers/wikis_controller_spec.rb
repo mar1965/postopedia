@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe WikisController, type: :controller do
-  #let(:my_user) { create(:user) }
+  let(:my_user) { create(:user) }
   let(:my_wiki) { create(:wiki) }
 
   before(:each) do
@@ -20,7 +20,7 @@ RSpec.describe WikisController, type: :controller do
     end
 
     it "assigns [my_wiki] to @wikis" do
-      expect(assigns(:wikis)).to eq(my_wiki)
+      expect(assigns(:wikis)).to eq([my_wiki])
     end
   end
 
@@ -85,7 +85,7 @@ RSpec.describe WikisController, type: :controller do
        put :update, id: my_wiki.id, wiki: {title: new_title, body: new_body}
      end
 
-     it "updates post with expected attributes" do
+     it "updates wiki with expected attributes" do
        updated_wiki = assigns(:wiki)
        expect(updated_wiki.id).to eq my_wiki.id
        expect(updated_wiki.title).to eq new_title
@@ -93,7 +93,7 @@ RSpec.describe WikisController, type: :controller do
      end
 
      it "redirects to the updated wiki" do
-       expect(response).to redirect_to my_post
+       expect(response).to redirect_to my_wiki
      end
    end
 
@@ -120,7 +120,7 @@ RSpec.describe WikisController, type: :controller do
 
    describe "DELETE destroy" do
      before do
-       delete :destroy, id: my_wiki.id
+       delete :destroy, {id: my_wiki.id}
      end
 
      it "deletes the wiki" do
