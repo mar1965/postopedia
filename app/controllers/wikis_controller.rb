@@ -1,4 +1,7 @@
 class WikisController < ApplicationController
+  #before_action :authenticate_user, except: [:index, :show]
+  before_action :authorize_user, except: [:index, :show]
+
   def index
     @wikis = Wiki.all
   end
@@ -57,6 +60,15 @@ class WikisController < ApplicationController
 
   def wiki_params
     params.require(:wiki).permit(:title, :body, :private)
+  end
+
+  def authorize_user
+    wiki = Wiki.find(params[:id])
+
+    unless current_user == wiki.user || not(wiki.private?)
+      flash[:alert] = "You can only edit public wikis."
+      redirect_to [wiki]
+    end
   end
 
 end
