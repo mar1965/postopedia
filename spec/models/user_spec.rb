@@ -16,7 +16,6 @@ RSpec.describe User, type: :model do
 
   # Shoulda tests for encrypted password
   it { should validate_presence_of(:password) }
-  it { should have_secure_password }
   it { should validate_length_of(:password).is_at_least(6) }
 
   describe "attributes" do
