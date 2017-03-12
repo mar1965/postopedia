@@ -1,6 +1,12 @@
 class ChargesController < ApplicationController
   before_action :check_premium
 
+  class Amount
+    def self.default
+      @amount = 15_00
+    end
+  end
+
   def create
     customer = Stripe::Customer.create(
       email: current_user.email,
@@ -9,7 +15,7 @@ class ChargesController < ApplicationController
 
     charge = Stripe::Charge.create(
       customer: customer.id,
-      amount: 15,
+      amount: Amount.default,
       description: "Postopedia Membership - #{current_user.email}",
       currency: 'usd'
     )
@@ -30,7 +36,7 @@ class ChargesController < ApplicationController
   def new
     @stripe_btn_data = {
     key: "#{ Rails.configuration.stripe[:publishable_key] }",
-    description: "BigMoney Membership - #{current_user.name}",
+    description: "Postopedia Premium Membership - #{current_user.email}",
     amount: Amount.default
    }
   end
