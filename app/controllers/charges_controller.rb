@@ -16,13 +16,13 @@ class ChargesController < ApplicationController
     charge = Stripe::Charge.create(
       customer: customer.id,
       amount: Amount.default,
-      description: "Postopedia Membership - #{current_user.email}",
+      description: "Postopedia Premium Membership - #{current_user.email}",
       currency: 'usd'
     )
 
     current_user.role = :premium
 
-    flash[:notice] = "Thanks for all the money, #{current_user.email}! Feel free to pay me again."
+    flash[:notice] = "Thanks for the upgrade to Premium Membership, #{current_user.email}! Feel free to pay me again."
     redirect_to wikis_path # or wherever
 
    # Stripe will send back CardErrors, with friendly messages
@@ -35,9 +35,17 @@ class ChargesController < ApplicationController
 
   def new
     @stripe_btn_data = {
-    key: "#{ Rails.configuration.stripe[:publishable_key] }",
-    description: "Postopedia Premium Membership - #{current_user.email}",
-    amount: Amount.default
+      key: "#{ Rails.configuration.stripe[:publishable_key] }",
+      description: "Postopedia Premium Membership - #{current_user.email}",
+      amount: Amount.default
+   }
+  end
+
+  def edit
+    @stripe_btn_data = {
+      key: "#{ Rails.configuration.stripe[:publishable_key] }",
+      description: "Postopedia Premium Membership - #{current_user.email}",
+      amount: Amount.default
    }
   end
 
