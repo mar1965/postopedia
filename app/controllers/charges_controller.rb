@@ -38,15 +38,13 @@ class ChargesController < ApplicationController
       key: "#{ Rails.configuration.stripe[:publishable_key] }",
       description: "Postopedia Premium Membership - #{current_user.email}",
       amount: Amount.default
-   }
+    }
   end
 
-  def edit
-    @stripe_btn_data = {
-      key: "#{ Rails.configuration.stripe[:publishable_key] }",
-      description: "Postopedia Premium Membership - #{current_user.email}",
-      amount: Amount.default
-   }
+  def downgrade
+    if check_premium
+      current_user.role = :standard
+    end
   end
 
 private
