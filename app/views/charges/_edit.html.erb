@@ -1,6 +1,6 @@
 <%= form_tag charges_path do %>
   <% if current_user.premium? %>
-    <%= button_to "Downgrade my account" %>
+    <%= link_to "Downgrade", downgrade_user_path, method: :post, class: "btn btn-danger center-block" %>
   <% else %>
     <h4>Upgrade to Premium! Do it!</h4>
     <article>

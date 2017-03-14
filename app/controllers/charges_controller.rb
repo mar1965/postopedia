@@ -1,12 +1,6 @@
 class ChargesController < ApplicationController
   before_action :check_premium
 
-  class Amount
-    def self.default
-      @amount = 15_00
-    end
-  end
-
   def create
     customer = Stripe::Customer.create(
       email: current_user.email,
@@ -21,6 +15,7 @@ class ChargesController < ApplicationController
     )
 
     current_user.role = :premium
+    current_user.save!
 
     flash[:notice] = "Thanks for the upgrade to Premium Membership, #{current_user.email}! Feel free to pay me again."
     redirect_to wikis_path # or wherever
