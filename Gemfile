@@ -29,6 +29,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'simplecov'
   gem 'rails-controller-testing'
+  gem 'stripe-ruby-mock', '~> 2.4.0', :require => 'stripe_mock'
 end
 
 group :development, :test do
@@ -64,3 +65,7 @@ gem 'bootstrap-sass'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 
 gem 'pundit'
+
+gem 'stripe'
+
+gem 'figaro', '1.0'
