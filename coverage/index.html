@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-18T16:38:07-10:00">2017-03-18T16:38:07-10:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-18T21:37:51-10:00">2017-03-18T21:37:51-10:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="green">93.73%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.22
+         2.49
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>27</b> files in total.
-    <b>128</b> relevant lines. 
-    <span class="green"><b>128</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <b>31</b> files in total.
+    <b>367</b> relevant lines. 
+    <span class="green"><b>344</b> lines covered</span> and
+    <span class="red"><b>23</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -49,6 +49,26 @@
       </tr>
     </thead>
     <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#87a49734411f23b52052e0cb7e3967fcf0edf065" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="red strong">75.0 %</td>
+        <td>12</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>0.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#cb1f77caed33a72fa3ae4b06eb8bb697d2add1e8" class="src_link" title="app/controllers/wikis_controller.rb">app/controllers/wikis_controller.rb</a></td>
+        <td class="yellow strong">82.22 %</td>
+        <td>75</td>
+        <td>45</td>
+        <td>37</td>
+        <td>8</td>
+        <td>3.4</td>
+      </tr>
       
       <tr>
         <td class="strong"><a href="#28ffe2ac82ace54741af10bdb4323d72e5821e3e" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
@@ -97,7 +117,7 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>2.2</td>
+        <td>14.7</td>
       </tr>
       
       <tr>
@@ -107,7 +127,27 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>2.4</td>
+        <td>15.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f6aeb5e27bfb84bf7f658b12254b71d46a3a0e5b" class="src_link" title="app/policies/application_policy.rb">app/policies/application_policy.rb</a></td>
+        <td class="red strong">53.57 %</td>
+        <td>53</td>
+        <td>28</td>
+        <td>15</td>
+        <td>13</td>
+        <td>0.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#09b0bd02b696ae1e524eaa6baab2245271651558" class="src_link" title="app/policies/wiki_policy.rb">app/policies/wiki_policy.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>32</td>
+        <td>17</td>
+        <td>17</td>
+        <td>0</td>
+        <td>6.2</td>
       </tr>
       
       <tr>
@@ -281,6 +321,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#9a43caae22e47fad127009713b760f47ea43967f" class="src_link" title="spec/controllers/wikis_controller_spec.rb">spec/controllers/wikis_controller_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>293</td>
+        <td>158</td>
+        <td>158</td>
+        <td>0</td>
+        <td>1.9</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#eb9c5f54033696736c69595a96d36fb0b7cb5b2b" class="src_link" title="spec/factories/user.rb">spec/factories/user.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
@@ -298,16 +348,6 @@
         <td>6</td>
         <td>0</td>
         <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#20bab773d72f3ce69d5881892488a6d6e280dc93" class="src_link" title="spec/models/wiki_spec.rb">spec/models/wiki_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>30</td>
-        <td>17</td>
-        <td>17</td>
-        <td>0</td>
-        <td>1.4</td>
       </tr>
       
       <tr>
@@ -335,6 +375,564 @@
       </div>
     
       <div class="source_files">
+      
+        <div class="source_table" id="87a49734411f23b52052e0cb7e3967fcf0edf065">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="red">75.0 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include Pundit</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  protect_from_forgery with: :exception</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :authenticate_user!, except: [:index, :show]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def user_not_authorized</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    flash[:alert] = &quot;You&#39;re not authorized for that action.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    redirect_to(@wiki)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="cb1f77caed33a72fa3ae4b06eb8bb697d2add1e8">
+  <div class="header">
+    <h3>app/controllers/wikis_controller.rb</h3>
+    <h4><span class="yellow">82.22 %</span> covered</h4>
+    <div>
+      <b>45</b> relevant lines. 
+      <span class="green"><b>37</b> lines covered</span> and
+      <span class="red"><b>8</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class WikisController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  after_action :verify_authorized, except: [:index]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="5">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    @wikis = Wiki.visible_to(current_user)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="9">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    @wiki = Wiki.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="10">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    authorize @wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="12">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    unless @wiki.private = false || current_user = &#39;admin&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">      flash[:alert] = &quot;You must be an admin to view private wikis.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">      redirect_to [@wiki]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="19">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    @wiki = Wiki.new</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="20">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    authorize @wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="24">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    @wiki = Wiki.new(wiki_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="25">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    @wiki.user = current_user</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="26">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    authorize @wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="28">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    if @wiki.save</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="29">
+          <span class="hits">6</span>
+          
+          <code class="ruby">      flash[:notice] = &quot;Wiki was saved.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="30">
+          <span class="hits">6</span>
+          
+          <code class="ruby">      redirect_to [@wiki]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">      flash.now[:alert] = &quot;There was an error saving the wiki. Please try again.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="33">
+          
+          
+          <code class="ruby">      render :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="38">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    @wiki = Wiki.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="39">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    @wiki.assign_attributes(wiki_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="40">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    authorize @wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="42">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    if @wiki.save</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="43">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      flash[:notice] = &quot;Wiki was updated.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="44">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      redirect_to [@wiki]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
+          
+          <code class="ruby">      flash[:error] = &quot;There was an error saving the wiki. Please try again.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="47">
+          
+          
+          <code class="ruby">      render :edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="52">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    @wiki = Wiki.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="53">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    authorize @wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="57">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    @wiki = Wiki.find(params[:id])</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="58">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    authorize @wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="60">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    if @wiki.destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="61">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      flash[:notice] = &quot;\&quot;#{@wiki.title}\&quot; was deleted successfully.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="62">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      redirect_to wikis_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="64">
+          
+          
+          <code class="ruby">      flash[:error] = &quot;There was an error deleting the wiki.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="65">
+          
+          
+          <code class="ruby">      render :show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def wiki_params</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="72">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    params.require(:wiki).permit(:title, :body, :private)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
       
         <div class="source_table" id="28ffe2ac82ace54741af10bdb4323d72e5821e3e">
   <div class="header">
@@ -524,8 +1122,8 @@
           <code class="ruby">  after_initialize :init</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="9">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="41" data-linenumber="9">
+          <span class="hits">41</span>
           
           <code class="ruby">  before_save { self.email = email.downcase }</code>
         </li>
@@ -590,8 +1188,8 @@
           <code class="ruby">  def init</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="20">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="84" data-linenumber="20">
+          <span class="hits">84</span>
           
           <code class="ruby">    self.role ||= :standard</code>
         </li>
@@ -650,8 +1248,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="4">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="91" data-linenumber="4">
+          <span class="hits">91</span>
           
           <code class="ruby">  default_scope { order(&#39;created_at DESC&#39;) }</code>
         </li>
@@ -686,13 +1284,559 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="10">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="9" data-linenumber="10">
+          <span class="hits">9</span>
           
           <code class="ruby">  scope :visible_to, -&gt; (user) { user ? all : where(private: false) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="f6aeb5e27bfb84bf7f658b12254b71d46a3a0e5b">
+  <div class="header">
+    <h3>app/policies/application_policy.rb</h3>
+    <h4><span class="red">53.57 %</span> covered</h4>
+    <div>
+      <b>28</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>13</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationPolicy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_reader :user, :wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(user, wiki)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    @user = user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    @wiki = wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    scope.where(:id =&gt; wiki.id).exists?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">    false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">    create?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">    user.present? and not wiki.private?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
+          
+          <code class="ruby">    update?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
+          
+          <code class="ruby">    false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def scope</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">    Pundit.policy_scope!(user, wiki.class)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  class Scope</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    attr_reader :user, :scope</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def initialize(user, scope)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">      @user = user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
+          
+          <code class="ruby">      @scope = scope</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def resolve</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
+          
+          <code class="ruby">      scope</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="09b0bd02b696ae1e524eaa6baab2245271651558">
+  <div class="header">
+    <h3>app/policies/wiki_policy.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class WikiPolicy &lt; ApplicationPolicy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_reader :user, :wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(user, wiki)</code>
+        </li>
+      
+        <li class="covered" data-hits="32" data-linenumber="5">
+          <span class="hits">32</span>
+          
+          <code class="ruby">    @user = user</code>
+        </li>
+      
+        <li class="covered" data-hits="32" data-linenumber="6">
+          <span class="hits">32</span>
+          
+          <code class="ruby">    @wiki = wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update?</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    user.present? || user.admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new?</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="14">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    user.present? || user.admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create?</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="18">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    user.present? || user.admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show?</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="22">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def edit?</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="26">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    user.present? || user.admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy?</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="30">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    user.present? || user.admin?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">end</code>
@@ -3792,6 +4936,1782 @@
   </pre>
 </div>
       
+        <div class="source_table" id="9a43caae22e47fad127009713b760f47ea43967f">
+  <div class="header">
+    <h3>spec/controllers/wikis_controller_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>158</b> relevant lines. 
+      <span class="green"><b>158</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe WikisController, type: :controller do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  let(:@user) { create(:user, email: &quot;wikiuser@email.com&quot;) }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  let(:@my_wiki) { create(:wiki, user: @user) }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  let(:@my_private_wiki) { create(:wiki, private: true, user: @user) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before(:each) do</code>
+        </li>
+      
+        <li class="covered" data-hits="40" data-linenumber="9">
+          <span class="hits">40</span>
+          
+          <code class="ruby">    @user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="40" data-linenumber="10">
+          <span class="hits">40</span>
+          
+          <code class="ruby">    sign_in @user</code>
+        </li>
+      
+        <li class="covered" data-hits="40" data-linenumber="11">
+          <span class="hits">40</span>
+          
+          <code class="ruby">    @wiki = FactoryGirl.create(:wiki, user: @user)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &quot;standard&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &quot;GET #index&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        get :index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;does not include private wikis in @wikis&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(assigns(:@wikis)).not_to eq(@my_private_wiki)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &quot;premium&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &quot;GET #index&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="33">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        get :index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;assigns Wiki.all to wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(assigns(:@wikis)).to eq(@my_private_wiki)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &quot;admin&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &quot;GET #index&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="50">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        get :index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;assigns Wiki.all to wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(assigns(:@wikis)).to eq(@my_private_wiki)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &quot;GET #show&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      before do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="64">
+          <span class="hits">3</span>
+          
+          <code class="ruby">        get :show, {id: @wiki.id}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;renders the #show view&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(response).to render_template :show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;assigns @wiki to @wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(assigns(:wiki)).to eq(@wiki)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    describe &quot;GET #new&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      before do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="82">
+          <span class="hits">3</span>
+          
+          <code class="ruby">        get :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="85">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="89">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;renders the #new view&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(response).to render_template :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="93">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;instantiates @wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="94">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(assigns(:wiki)).not_to be_nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     describe &quot;POST create&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="100">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;increments Wiki by 1&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="101">
+          <span class="hits">2</span>
+          
+          <code class="ruby">         expect{post :create, wiki: {title: Faker::StarWars.droid, body: Faker::StarWars.quote}}.to change(Wiki,:count).by(1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="104">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;assigns the new wiki to @wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="105">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         post :create, wiki: {title: Faker::StarWars.droid, body: &quot;something!!!!!!!!!!!!!!!!!&quot;}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="106">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(assigns(:wiki)).to eq Wiki.first</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="108">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="109">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;redirects to the new wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="110">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         post :create, wiki: {title: Faker::StarWars.droid, body: Faker::StarWars.quote}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="111">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(response).to redirect_to Wiki.first</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="114">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="115">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     describe &quot;PUT update&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="116">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="117">
+          <span class="hits">2</span>
+          
+          <code class="ruby">         @new_title = Faker::StarWars.droid</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="118">
+          <span class="hits">2</span>
+          
+          <code class="ruby">         @new_body = Faker::StarWars.quote</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="119">
+          <span class="hits">2</span>
+          
+          <code class="ruby">         put :update, id: @wiki.id, wiki: {title: @new_title, body: @new_body}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="120">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="122">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;updates wiki with expected attributes&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="123">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         updated_wiki = assigns(:wiki)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="124">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(updated_wiki.id).to eq @wiki.id</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="125">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(updated_wiki.title).to eq @new_title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="126">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(updated_wiki.body).to eq @new_body</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="127">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="128">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="129">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;redirects to the updated wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="130">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(response).to redirect_to @wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="131">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="132">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="133">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="134">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     describe &quot;GET edit&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="135">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       before do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="136">
+          <span class="hits">3</span>
+          
+          <code class="ruby">         get :edit, {id: @wiki.id}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="137">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="138">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="139">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="140">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="141">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="142">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="143">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;renders to #edit view&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="144">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(response).to render_template :edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="145">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="146">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="147">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;assigns wiki to be updated to @wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="148">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         wiki_instance = assigns(:wiki)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="149">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(wiki_instance.id).to eq @wiki.id</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="150">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(wiki_instance.title).to eq @wiki.title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="151">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(wiki_instance.body).to eq @wiki.body</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="152">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="153">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="154">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="155">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     describe &quot;DELETE destroy&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="156">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="157">
+          <span class="hits">2</span>
+          
+          <code class="ruby">         delete :destroy, {id: @wiki.id}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="158">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="159">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="160">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;deletes the wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="161">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         count = Wiki.where({id: @wiki.id}).size</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="162">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(count).to eq 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="163">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="164">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="165">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       it &quot;redirects to wiki index&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="166">
+          <span class="hits">1</span>
+          
+          <code class="ruby">         expect(response).to redirect_to wikis_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="167">
+          
+          
+          <code class="ruby">       end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="168">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="169">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="170">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="171">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #index&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="172">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="173">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      get :index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="174">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="175">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="176">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="177">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="178">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="179">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="180">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;assigns [@wiki] to @wikis&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="181">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(assigns(:wikis).first).to eq(@wiki)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="182">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="183">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="184">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="185">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #show&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="186">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    before do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="187">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      get :show, {id: @wiki.id}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="188">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="189">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="190">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="191">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="192">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="193">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="194">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;renders the #show view&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="195">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to render_template :show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="196">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="197">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="198">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;assigns @wiki to @wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="199">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(assigns(:wiki)).to eq(@wiki)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="200">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="201">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="202">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="203">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #new&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="204">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    before do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="205">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      get :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="206">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="207">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="208">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="209">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="210">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="211">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="212">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;renders the #new view&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="213">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(response).to render_template :new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="214">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="215">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="216">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;instantiates @wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="217">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(assigns(:wiki)).not_to be_nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="218">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="219">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="220">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="221">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   describe &quot;POST create&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="222">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="223">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;increments Wiki by 1&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="224">
+          <span class="hits">2</span>
+          
+          <code class="ruby">       expect{post :create, wiki: {title: Faker::StarWars.droid, body: Faker::StarWars.quote}}.to change(Wiki,:count).by(1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="225">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="226">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="227">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;assigns the new wiki to @wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="228">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       post :create, wiki: {title: Faker::StarWars.droid, body: &quot;something!!!!!!!!!!!!!!!!!&quot;}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="229">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(assigns(:wiki)).to eq Wiki.first</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="230">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="231">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="232">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;redirects to the new wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="233">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       post :create, wiki: {title: Faker::StarWars.droid, body: Faker::StarWars.quote}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="234">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(response).to redirect_to Wiki.first</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="235">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="236">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="237">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="238">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   describe &quot;PUT update&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="239">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="240">
+          <span class="hits">2</span>
+          
+          <code class="ruby">       @new_title = Faker::StarWars.droid</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="241">
+          <span class="hits">2</span>
+          
+          <code class="ruby">       @new_body = Faker::StarWars.quote</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="242">
+          <span class="hits">2</span>
+          
+          <code class="ruby">       put :update, id: @wiki.id, wiki: {title: @new_title, body: @new_body}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="243">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="244">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="245">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;updates wiki with expected attributes&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="246">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       updated_wiki = assigns(:wiki)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="247">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(updated_wiki.id).to eq @wiki.id</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="248">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(updated_wiki.title).to eq @new_title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="249">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(updated_wiki.body).to eq @new_body</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="250">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="251">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="252">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;redirects to the updated wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="253">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(response).to redirect_to @wiki</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="254">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="255">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="256">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="257">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   describe &quot;GET edit&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="258">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     before do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="259">
+          <span class="hits">3</span>
+          
+          <code class="ruby">       get :edit, {id: @wiki.id}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="260">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="261">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="262">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="263">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="264">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="265">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="266">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;renders to #edit view&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="267">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(response).to render_template :edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="268">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="269">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="270">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;assigns wiki to be updated to @wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="271">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       wiki_instance = assigns(:wiki)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="272">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(wiki_instance.id).to eq @wiki.id</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="273">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(wiki_instance.title).to eq @wiki.title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="274">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(wiki_instance.body).to eq @wiki.body</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="275">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="276">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="277">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="278">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   describe &quot;DELETE destroy&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="279">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="280">
+          <span class="hits">2</span>
+          
+          <code class="ruby">       delete :destroy, {id: @wiki.id}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="281">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="282">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="283">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;deletes the wiki&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="284">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       count = Wiki.where({id: @wiki.id}).size</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="285">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(count).to eq 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="286">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="287">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="288">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &quot;redirects to wiki index&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="289">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(response).to redirect_to wikis_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="290">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="291">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="292">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="293">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="eb9c5f54033696736c69595a96d36fb0b7cb5b2b">
   <div class="header">
     <h3>spec/factories/user.rb</h3>
@@ -3909,204 +6829,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
-        <div class="source_table" id="20bab773d72f3ce69d5881892488a6d6e280dc93">
-  <div class="header">
-    <h3>spec/models/wiki_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>17</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">require &#39;rails_helper&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">RSpec.describe Wiki, type: :model do</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
-          
-          <code class="ruby">  let(:user) { create(:user, email: &quot;wikiuser1@email.com&quot; ) }</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
-          
-          <code class="ruby">  let(:wiki) { Wiki.create!(title: &quot;Wiki Title Wiki Wiki&quot;, body: &quot;This is my wiki body. This wiki is nice!&quot;, private: false, user_id: user.id) }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  describe &quot;attributes&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &quot;has title and body attributes&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(wiki).to have_attributes(title: &quot;Wiki Title Wiki Wiki&quot;, body: &quot;This is my wiki body. This wiki is nice!&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  describe &quot;scopes&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    before do</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="15">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      @public_wiki = Wiki.create!(title: &quot;Wiki Title Wiki Wiki&quot;, body: &quot;This is my wiki body. This wiki is nice!&quot;, private: false, user_id: user.id)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      @private_wiki = Wiki.create!(title: &quot;Wiki Title Wiki Wiki&quot;, body: &quot;This is my wiki body. This wiki is nice!&quot;, private: true, user_id: user.id)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    describe &quot;visible_to(user)&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      it &quot;returns all wikis if the user is present&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        user = User.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        expect(Wiki.visible_to(user)).to eq(Wiki.all)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      it &quot;returns only public wikis if user is nil&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        expect(Wiki.visible_to(nil)).to eq([@public_wiki])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">end</code>
