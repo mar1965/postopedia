@@ -2,17 +2,12 @@ class WikisController < ApplicationController
   after_action :verify_authorized, except: [:index]
 
   def index
-    @wikis = Wiki.visible_to(current_user)
+    @wikis = policy_scope(Wiki)
   end
 
   def show
     @wiki = Wiki.find(params[:id])
     authorize @wiki
-
-    unless current_user.premium? || current_user.admin? || @wiki.private == false
-      flash[:alert] = "You must upgrade your account to Premium to view private wikis."
-      redirect_to wikis_path
-    end
   end
 
   def new
