@@ -2,7 +2,7 @@ class WikisController < ApplicationController
   after_action :verify_authorized, except: [:index]
 
   def index
-    @wikis = Wiki.all
+    @wikis = policy_scope(Wiki)
   end
 
   def show
