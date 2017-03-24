@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     @user = current_user
     @user.role = :standard
     @user.save!
+    Wiki.downgrade_to_public(@user)
     flash[:notice] = "Your membership has been downgraded."
     redirect_to wikis_path
   end

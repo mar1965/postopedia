@@ -27,4 +27,12 @@ RSpec.describe Wiki, type: :model do
       end
     end
   end
+
+  describe "downgrade_to_public" do
+    it "removes privacy from all wikis based on the user" do
+      private_wiki = Wiki.create!(title: "Stuff!", body: "This is my private wiki body. This wiki is nice!", private: true, user_id: user.id)
+      private_wiki = Wiki.downgrade_to_public(user).first
+      expect(private_wiki.private).to eq(false)
+    end
+  end
 end
