@@ -69,3 +69,5 @@ gem 'pundit'
 gem 'stripe'
 
 gem 'figaro', '1.0'
+
+gem 'redcarpet', '~> 3.4.0'
