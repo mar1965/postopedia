@@ -8,6 +8,7 @@ class WikisController < ApplicationController
   def show
     @wiki = Wiki.find(params[:id])
     authorize @wiki
+    @body = Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(@wiki.body)
   end
 
   def new
