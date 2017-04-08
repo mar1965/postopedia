@@ -3,10 +3,8 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   let(:user) { create(:user, email: "wikiuser@email.com" ) }
 
-  # Shoulda tests for name
-  it { is_expected.to have_many(:wikis)}
-  # it { should validate_presence_of(:name) }
-  # it { should validate_length_of(:name).is_at_least(1) }
+  it { is_expected.to have_many(:wikis) }
+  it { is_expected.to have_many(:collaborators) }
 
   # Shoulda tests for email
   it { should validate_presence_of(:email) }

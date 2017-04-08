@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :wikis
+  resources :collaborators, only: [:create, :destroy]
 
   devise_for :users
 
